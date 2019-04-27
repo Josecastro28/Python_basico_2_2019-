@@ -1,0 +1,124 @@
+
+****************************
+
+Longitud de lista comando len
+
+len(mis_frutas)
+****************************
+ in - "banano" in mis_frutas - Para pertenencia
+
+Si no esta, retorna un "false"
+
+****************************
+
+in - "banano" not in mis_frutas - comando para negar in 
+
+
+****************************
+
+Para agregar valores - mis_frutas.append ("banano")
+
+
+****************************
+
+Puedo agregar palabras vacias 
+
+mis_frutas.append ("")
+
+
+****************************
+
+Agregar una lista dentro de una lista 
+
+mis_frutas.append (["marañon", "fruta pan", "mora"])
+
+Ejemplo 
+
+lista de compras
+
+verduras = ["tomate", "papas", "cebollas", "ajos"]
+frutas = ["piña", "naraja", "sandia"]
+carnes = ["mortadel", "pollo", "costilla de cerdo"]
+limpieza = ["javon", "cloro", "shampoo"]
+
+lista_de_compras = []
+lista_de_compras.append (verduras)
+lista_de_compras.append (frutas)
+lista_de_compras.append (carnes)
+lista_de_compras.append (limpieza)
+
+pass
+
+****************************
+
+# Hacer un codigo que me diga cuantos elementos voy a comprar
+
+verduras = ["tomate", "papas", "cebollas", "ajos"]
+frutas = ["piña", "naraja", "sandia"]
+carnes = ["mortadel", "pollo", "costilla de cerdo"]
+limpieza = ["javon", "cloro", "shampoo"]
+
+lista_de_compras = []
+lista_de_compras.append (verduras)
+lista_de_compras.append (frutas)
+lista_de_compras.append (carnes)
+lista_de_compras.append (limpieza)
+
+for categoria in lista_de_compras: 
+    print(categoria)
+
+for categoria in lista_de_compras:
+    print(categoria, type(categoria))
+
+cantidad = 0
+for categoria in lista_de_compras:
+    cantidad += len (categoria)
+
+print(cantidad)
+
+# o tambien 
+
+verduras = ["tomate", "papas", "cebollas", "ajos"]
+frutas = ["piña", "naraja", "sandia"]
+carnes = ["mortadel", "pollo", "costilla de cerdo"]
+limpieza = ["javon", "cloro", "shampoo"]
+
+lista_de_compras = []
+lista_de_compras.append (verduras)
+lista_de_compras.append (frutas)
+lista_de_compras.append (carnes)
+lista_de_compras.append (limpieza)
+
+
+for categoria in lista_de_compras:
+    print(categoria, type(categoria))
+
+mi_lista= []
+
+for categoria in lista_de_compras:
+    mi_lista.extend(categoria)
+
+print(len(mi_lista))
+
+pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
